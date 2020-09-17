@@ -4,8 +4,7 @@
 
 Open the terminal in your codespace using either the key shortcut
 
-```
-Ctrl + `
+
 ```
 
 ![terminalshortcut](https://raw.githubusercontent.com/DataSnowman/EphrataTEALS/master/images/terminalshortcut.png)
