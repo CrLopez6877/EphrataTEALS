@@ -2,6 +2,11 @@ package studentWork.Unit1;
 
 public class PikachuChatter {
     public static void main (String[] args) {
+        
+        public static void drawPikachu(){
+            
+        }
+
         System.out.println("Pika pika pika chu pika chu peeeee ka pika chu!");
         System.out.println("(\\__/)");
         System.out.println("(o^.^)");
