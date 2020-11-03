@@ -1,7 +1,9 @@
-package sampleCode.Chapter1.CodeErrors;
+package studentWork.CodeErrors;
 
 public class HelloEphrata {
-}
+
     public static void main (String [] args) {
-        System.out.println("Hello" Ephrata")
+        System.out.println("Hello Ephrata");
+    
     }
+} 

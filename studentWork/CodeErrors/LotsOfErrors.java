@@ -1,12 +1,12 @@
-package studentWork.CodeErrors
+package studentWork.Chapter1
 
 public class LotsOfErrors {
-        public static main(String args) {
+        public static main(String [] args) {
             System.println(Hello, world!);
             message()
         }
     
-        public static void message {
+        public static void message{
             System.out.println("This program surely cannot");
             System.out.println("have any \"errors" in it\");
         }
