@@ -8,9 +8,9 @@ public class PokemonBattle {
         
 
        String yourPokemon = battleStart();
-        damage(yourPokemon);
-        statsTable(yourPokemon);
-
+       int hp = damage(yourPokemon);
+        statsTable(yourPokemon, hp);
+        
     }
 
      
@@ -58,13 +58,13 @@ public class PokemonBattle {
 
 
 
-    public static void statsTable() {
+    public static void statsTable(String yourPokemon, int hp) {
         System.out.println("Name      "+  yourPokemon);
-        System.out.println("Level     "+ level);
+        System.out.println("Level    4");
         System.out.println("------------------------------ ");
         System.out.println("HP        "+ hp);
-        System.out.println("ATTACK    "+ attack);
-        System.out.println("DEFENSE   "+ defense);
+        System.out.println("ATTACK   2" );
+        System.out.println("DEFENSE   7");
         System.out.println("-------------------------------");
         System.out.println("Moves Learned: Thunder Wave, Hidden Power, Psycho Cut, Recover");
     
