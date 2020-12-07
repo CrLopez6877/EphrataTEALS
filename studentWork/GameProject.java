@@ -7,7 +7,7 @@ public class GameProject {
 
 
     public static String startGame() {
-        String wordBank[] = {"Spongebob", "Patrick", "Squidward", "Sandy", "Plankton", "Krabs", "Larry", "Gary", "Pearl", "Neptune"};
+        String wordBank[] = {"spongebob", "patrick", "squidward", "sandy", "plankton", "krabs", "larry", "gary", "pearl", "neptune"};
         Random rand = new Random(); 
         int number = rand.nextInt(wordBank.length);
         int incorrectGuesses = 0;
@@ -44,7 +44,7 @@ public class GameProject {
         letterGuess = userGuess.charAt(0);
 
         int blanksLeft = word.length();
-        while(incorrectGuesses < 5 && gameOver != true){
+        while(incorrectGuesses < 6 && gameOver != true){
             blanksLeft = 0;
             letterGuessed = false;
             for(int i = 0; i < word.length(); i++){
@@ -86,7 +86,7 @@ public class GameProject {
           if(gameOver == true){
               return "You WIN!!";
           } else { 
-        return "loser";
+        return "Too many errors, you lose.";
           }
 
     }
@@ -97,9 +97,12 @@ public class GameProject {
      System.out.println("HHHH          AAAAA          N      N   N      G    GGG        M     M      M    M          AAAAA            N      N   N");
      System.out.println("H  H         A     A         N        N N       G    G         M       M M       M         A    A            N        N N");
      System.out.println("H  H        A       A        N          N         GGG          M        M        M        A       A          N          N");
-     System.out.println("  ");
-     System.out.println("  ");
-     System.out.println("  ");
+     /*Rules of the game: 
+     1.To Start type in "yes". 
+     2.To win the game you must guess the word in the blank slots, character by character. 
+     3.You are able to get an error 6 times, if you get more than 6 errors you lose.
+     4.Only type in 1 letter at a time 
+     */
      Scanner console = new Scanner(System.in);
      System.out.println("Type 'yes' to hang a man.");
      String answer = console.nextLine();
