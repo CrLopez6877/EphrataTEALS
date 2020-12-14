@@ -74,7 +74,7 @@ public class GameProject {
                 break;
             } else {
                 System.out.println();
-                System.out.print("Incorrect guesses ");
+                System.out.print("Number of times you've sucked: ");
                 System.out.println(incorrectGuesses);
                 System.out.println("Guess a letter");
                 userGuess = console.nextLine();
@@ -84,9 +84,9 @@ public class GameProject {
         
 
           if(gameOver == true){
-              return "You WIN!!";
+              return "You got lucky, game over";
           } else { 
-        return "Too many errors, you lose.";
+        return "lol u suck loser, game over";
           }
 
     }
