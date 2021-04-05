@@ -37,8 +37,14 @@ public class ProcessingNumbers {
     }
 
     //Group1 Write minMax Method
-
-
+    public static void minMax(int totalNumbers){
+        Scanner input1 = new Scanner(System.in);
+        Scanner input2 = new Scanner(System.in);
+        int maxNumber = Math.max(input1, input2);
+        int minNumber = Math.min(input1, input2);
+        return ;
+    }
+    
 
 
 

@@ -6,6 +6,39 @@ import java.util.Random;
 public class GameProject {
 
 
+    public static void gameRules() {
+        System.out.println("How to play:");
+        System.out.println("1. Guess a letter to fill in the blank");
+        System.out.println("2. If you guess the wrong letter 6 times, you lose");
+        System.out.println("3. All letters must be typed in lower case");
+        System.out.println("4. Guess every letter correct within 6 incorrect guesses to win");
+
+    }
+    public static int incorrectGuesses (i) {
+        int blanksLeft = word.length();
+        while(incorrectGuesses < 6 && gameOver != true){
+            blanksLeft = 0;
+            letterGuessed = false;
+            for(int i = 0; i < word.length(); i++){
+                if(wordChar[i] == letterGuess){
+                    blankWord[i] = wordChar[i];
+                    letterGuessed = true;
+                }
+            }
+
+            if(letterGuessed == false){
+                incorrectGuesses = incorrectGuesses + 1;
+            }
+            
+        return incorrectGuesses;
+    }
+    public static int blanksleft(
+
+    ) {
+        /*wordChar
+        blanksLeft
+        blankWord*/
+    }
     public static String startGame() {
         String wordBank[] = {"spongebob", "patrick", "squidward", "sandy", "plankton", "krabs", "larry", "gary", "pearl", "neptune"};
         Random rand = new Random(); 
@@ -91,18 +124,22 @@ public class GameProject {
 
     }
     public static void main(String[] args) {
+
      System.out.println("H  H            A            N          N          GGG         M                 M            A              N          N");
      System.out.println("H  H           AA            N  N       N         G            M M             M M           AA              N  N       N ");
      System.out.println("H  H           A A           N   N      N       G              M   M          M  M           A A             N    N     N");
      System.out.println("HHHH          AAAAA          N      N   N      G    GGG        M     M      M    M          AAAAA            N      N   N");
      System.out.println("H  H         A     A         N        N N       G    G         M       M M       M         A    A            N        N N");
      System.out.println("H  H        A       A        N          N         GGG          M        M        M        A       A          N          N");
-     /*Rules of the game: 
+
+      /*Rules of the game: 
      1.To Start type in "yes". 
      2.To win the game you must guess the word in the blank slots, character by character. 
      3.You are able to get an error 6 times, if you get more than 6 errors you lose.
      4.Only type in 1 letter at a time 
      */
+    gameRules();
+    
      Scanner console = new Scanner(System.in);
      System.out.println("Type 'yes' to hang a man.");
      String answer = console.nextLine();
