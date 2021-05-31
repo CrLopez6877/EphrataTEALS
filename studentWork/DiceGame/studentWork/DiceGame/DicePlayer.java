@@ -10,19 +10,21 @@ public class DicePlayer {
         this.dice = Die[4];
         for (int index = 0; index < this.dice.length; index++) {
             this.dice[index] = new Die();
-        }
+        } 
     }
-    public String getName() {
+    public String getName
+    () {
         return this.name;
     }
-    public Die() {
+    public Die[] getDice() {
+        return this.dice;
         
     }
 
         
-    }
+    
 
-    // TODO (1): Write getters for name and the Die array.
+
 
     public void rollDice()  {
         // TODO (3): Roll each die in the Die array.

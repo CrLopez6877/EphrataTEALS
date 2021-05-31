@@ -1,4 +1,4 @@
-package studentWork.RetroMetro;
+package RetroMetro;
 
 public class MetroTicket {
     private int[] rides;

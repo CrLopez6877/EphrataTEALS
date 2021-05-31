@@ -1,4 +1,4 @@
-package studentWork.RetroMetro;
+package studentWork.RetroMetro.MetroTicket;
 import java.util.*;
 
 public class MetroTicketClient {
